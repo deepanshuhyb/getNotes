@@ -3,6 +3,30 @@ import { cn } from "../../lib/utils";
 import { motion } from "motion/react";
 import React from "react";
 
+// export const BackgroundLines = ({
+//     children,
+//     className,
+//     svgOptions,
+// }: {
+//     children: React.ReactNode;
+//     className?: string;
+//     svgOptions?: {
+//         duration?: number;
+//     };
+// }) => {
+//     return (
+//         <div
+//             className={cn(
+//                 "h-[20rem] md:h-screen w-full bg-white dark:bg-black",
+//                 className
+//             )}
+//         >
+//             <SVG svgOptions={svgOptions} />
+//             {children}
+//         </div>
+//     );
+// };
+
 export const BackgroundLines = ({
     children,
     className,
@@ -17,11 +41,13 @@ export const BackgroundLines = ({
     return (
         <div
             className={cn(
-                "h-[20rem] md:h-screen w-full bg-white dark:bg-black",
+                "relative h-[20rem] md:h-screen w-full bg-white dark:bg-black",
                 className
             )}
         >
-            <SVG svgOptions={svgOptions} />
+            <div className="absolute inset-0 w-full h-full">
+                <SVG svgOptions={svgOptions} />
+            </div>
             {children}
         </div>
     );

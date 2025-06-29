@@ -19,7 +19,7 @@ export default function Navbar() {
             <form action="" className='my-auto relative'>
                 <input
                     type="text"
-                    className={`my-auto flex h-9 md:h-12 w-44 md:w-72 focus:ring-2 focus:ring-indigo-500 rounded-md border-2 border-input border-indigo-500  focus:border-blue-400 outline-none  bg-transparent px-3 py-1 md:text-base text-sm transition-all duration-300 ease-in-out ${classForNavbar} `}
+                    className={`my-auto flex h-9 md:h-12 w-44 md:w-72 focus:ring-2 focus:ring-indigo-500 rounded-md border-2 border-indigo-500  focus:border-blue-400 outline-none  bg-transparent px-3 py-1 md:text-base text-sm transition-all duration-300 ease-in-out ${classForNavbar} `}
                     value={value}
                     onChange={e => setValue(e.target.value)}
                     onClick={() => setIsNavbarBigClicked(true)}

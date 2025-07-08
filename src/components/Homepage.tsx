@@ -25,31 +25,43 @@ export default function Homepage() {
             Get All Your Notes Here.
           </span>
         </h1>
-        {/* <div className='flex justify-center items-center mt-8'>
-          <a
-            href='/login'
-            className='bg-neutral-800 text-neutral-200 px-4 py-2 rounded-md hover:bg-neutral-700 transition duration-300'
-          >
-            Get Started
-          </a>
-        </div> */}
-        <form action="" className='text-black border border-amber-50 w-fit mx-auto h-fit mt-16 rounded' >
-          <Select>
-            <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Select a fruit" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup>
-                <SelectLabel>Fruits</SelectLabel>
-                <SelectItem value="apple">Apple</SelectItem>
-                <SelectItem value="banana">Banana</SelectItem>
-                <SelectItem value="blueberry">Blueberry</SelectItem>
-                <SelectItem value="grapes">Grapes</SelectItem>
-                <SelectItem value="pineapple">Pineapple</SelectItem>
-              </SelectGroup>
-            </SelectContent>
-          </Select>
-        </form>
+        <div>
+
+          <form action="" className='text-blacks w-full flex justify-center h-fit mt-16 rounded' >
+            <Select>
+              <SelectTrigger className="w-[90%] md:w-[40%]">
+                <SelectValue placeholder="Select a fruit" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectLabel>Fruits</SelectLabel>
+                  <SelectItem value="apple">Apple</SelectItem>
+                  <SelectItem value="banana">Banana</SelectItem>
+                  <SelectItem value="blueberry">Blueberry</SelectItem>
+                  <SelectItem value="grapes">Grapes</SelectItem>
+                  <SelectItem value="pineapple">Pineapple</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+          </form>
+          <form action="" className='text-blacks w-full flex justify-center h-fit mt-6 rounded' >
+            <Select>
+              <SelectTrigger className="w-[90%] md:w-[40%]">
+                <SelectValue placeholder="Select a fruit" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectLabel>Fruits</SelectLabel>
+                  <SelectItem value="apple">Apple</SelectItem>
+                  <SelectItem value="banana">Banana</SelectItem>
+                  <SelectItem value="blueberry">Blueberry</SelectItem>
+                  <SelectItem value="grapes">Grapes</SelectItem>
+                  <SelectItem value="pineapple">Pineapple</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+          </form>
+        </div>
 
         {/* </BackgroundLines> */}
       </div>
